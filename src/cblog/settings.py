@@ -83,8 +83,8 @@ def get_ssm_parameters():
     ssm = boto3.client('ssm', region_name='us-east-1')
 
     # AWS SSM Parametr define
-    username_param = ssm.get_parameter(Name="/<yourname>/capstone/username", WithDecryption=True)
-    password_param = ssm.get_parameter(Name="/<yourname>/capstone/password", WithDecryption=True)
+    username_param = ssm.get_parameter(Name="/burhan/capstone/username", WithDecryption=True)
+    password_param = ssm.get_parameter(Name="/burhan/capstone/password", WithDecryption=True)
 
 
     # Parametre retrieve
